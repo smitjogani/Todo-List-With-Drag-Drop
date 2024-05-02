@@ -9,6 +9,16 @@ const CreateTask = ({ tasks, setTasks }) => {
     status: "todo", //inprogree or close
   });
 
+   localStorage.setItem(
+    "tasks",
+    JSON.stringify([{
+      id: "4891ea9a-8069-42b5-a20a-5a9ec28cf357",
+      title: "Food",
+      desc: "Pizza",
+      status: "closed",
+    }])
+  );
+  
   // console.log(task);
 
   const handleSubmit = (e) => {
