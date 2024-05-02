@@ -7,9 +7,9 @@ const ListTasks = ({ tasks, setTasks }) => {
   const [closed, setClosed] = useState([]);
 
   useEffect(() => {
-    const fTodos = tasks.filter((task) => task.status === "todo" || task.status === "");
-    const fInProgress = tasks.filter((task) => task.status === "progress"|| task.status === "");
-    const fClosed = tasks.filter((task) => task.status === "closed"|| task.status === "");
+    const fTodos = tasks.filter((task) => task.status === "todo");
+    const fInProgress = tasks.filter((task) => task.status === "progress");
+    const fClosed = tasks.filter((task) => task.status === "closed");
 
     setTodos(fTodos);
     setInProgress(fInProgress);
